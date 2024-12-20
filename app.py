@@ -32,6 +32,13 @@ st.set_page_config(page_title="Pneumonia Detection", layout="centered")
 st.markdown(
     """
     <style>
+    body {
+        background-color: #000000 !important;
+        color: #FFFFFF !important;
+    }
+    .stApp {
+        background-color: #000000 !important;
+    }
     .title-container {
         display: flex;
         align-items: center;
@@ -43,11 +50,13 @@ st.markdown(
         font-size: 36px;
         font-weight: bold;
         text-align: center;
+        color: #FFFFFF;
     }
     .subtitle {
         font-size: 18px;
         text-align: center;
         margin-bottom: 40px;
+        color: #FFFFFF;
     }
     .result {
         font-size: 28px;
@@ -88,7 +97,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image)
     result, prob, message = predict_image(image)
-    
+
     result_color = "#FF4B4B" if "PNEUMONIA" in result else "#4CAF50"
     st.markdown(f'<div class="result" style="color: {result_color};">Prediction: {result}</div>', unsafe_allow_html=True)
     st.markdown(f'<div class="probability">Probability: {prob:.2f}%</div>', unsafe_allow_html=True)
