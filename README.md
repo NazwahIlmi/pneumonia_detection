@@ -1,19 +1,17 @@
-**##pneumonia_detection**  
+## Pneumonia Detection
 Repositori ini berisikan model untuk mendeteksi pneumonia berdasarkan citra X-ray dada menggunakan CNN  
 
 ---
 
-**## install Pustaka**  
+## Install Pustaka
 pip install -r requirements.txt  
 
 ---
 
-**## masuk ke direktori**  
+## Masuk ke Direktori
 cd pneumonia_detection  
 
 ---
 
-**## running streamlit**  
+## Running Streamlit
 streamlit run app.py  
-
----
