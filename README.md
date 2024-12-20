@@ -1,4 +1,4 @@
-**## pneumonia_detection**  
+**##pneumonia_detection**  
 Repositori ini berisikan model untuk mendeteksi pneumonia berdasarkan citra X-ray dada menggunakan CNN  
 
 ---
